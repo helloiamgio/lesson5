@@ -1,6 +1,6 @@
 node('master') {
     stage("Fetch Source Code") {
-	cleanWS()
+	cleanWs()
         git ([url: 'https://github.com/helloiamgio/lesson5', branch: 'add-functions-and-tests'])
     }
     
